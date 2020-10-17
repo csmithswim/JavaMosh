@@ -105,5 +105,31 @@ Cookies are text data sent by server to the client and it gets saved at the clie
 Servlet API provides cookies support through javax.servlet.http.Cookie class that implements Serializable and Cloneable interfaces.
 HttpServletRequest getCookies() method is provided to get the array of Cookies form request, since there is no point of adding Cookie to request, there are no methods to set or add cookie to request. Similarly httpservletresponse addcookie(cookie c) method is provided to attach cookie in response header, there are no getter methods for cookie.
 
+JDBC Driver is a software component that enables java application to interact with the database. There are 4 types of JDBC drivers: 
+JDBC-ODBC bridge driver
+Native-API driver (partially java driver)
+Network protocol driver (fully java driver)
+Thin driver (fully java driver)
 
+There are 5 steps to do when you connect to the database in Java: 
+
+Registering the driver class
+Creating connection
+Creating statement
+Executing queries
+Closing connection
+
+Make sure you close your connection finally.
+
+Interfaces in JDBC: COnnection, statement, prepared statement, resuletset, resultset/metadata, database metadata, callable statement.
+
+Class in JDBC: driver manager, blob, clob, types, SQL exception.
+
+JDBC connection interface - the one that maintains the session with the database. It can be used for transation management.
+
+executeQuery() - this method is used to execute the SQL statements which retrive some data from the database.
+
+executeUpdate() - this method is used to execute the SQL statements which update or modify the database.
+
+execute() - this method can be used for any kind of SQL statements.
 
