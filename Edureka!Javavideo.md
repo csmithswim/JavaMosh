@@ -79,3 +79,31 @@ It is server side technologies to extend the capability of web servers by provid
 The javax.serlet and javax.servglet.http packagews provide interfaces and classes for writing our own servlets.
 All servlets must implment the javax.servlet.Servlet interface, which defines servlet lifecycle methods. As most web applications are accessed using HTTP protocol, we mostly extend Httpservlet class. Servlet API hierachy.
 
+Get request - limited amount of data can be sent.
+
+Post request - large amount of data can be sent.
+
+Session is a conversational state between client and server and it can consist of multiple request and response between client and server.
+
+Since HTTP and web server both are stateless, the only way to maintain a session is when some unique information aboute the session (session id) is passed between server and client in every request and response.
+
+Servlet config object represent single servlet.
+
+Servletcontext represents whole web application running on particular JVM and common for all the servlet.
+
+There are 5 stages of a servlet: servlet is loaded, instantiated, initialized, service the request, and servlet is destroyed.
+
+RequestDispatcher interface is used to foward the request to another resource that can be HTML, JSP or another servlet in same application.
+
+We can also use this to include the content of another resource to the response.
+
+There are two methods defined in this interface:
+1. void foward()
+2. void include()
+
+Cookies are text data sent by server to the client and it gets saved at the client local machine.
+Servlet API provides cookies support through javax.servlet.http.Cookie class that implements Serializable and Cloneable interfaces.
+HttpServletRequest getCookies() method is provided to get the array of Cookies form request, since there is no point of adding Cookie to request, there are no methods to set or add cookie to request. Similarly httpservletresponse addcookie(cookie c) method is provided to attach cookie in response header, there are no getter methods for cookie.
+
+
+
