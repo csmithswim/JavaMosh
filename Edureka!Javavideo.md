@@ -133,3 +133,61 @@ executeUpdate() - this method is used to execute the SQL statements which update
 
 execute() - this method can be used for any kind of SQL statements.
 
+Spring is an application framework that focuses on inversion of the control container for the java platform.
+
+The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.
+Spring is essentially a lightweight, integrated framework that can be used for developing enterprise applications in java.
+
+Some of the important spring framework modules are: spring context - for dependency injection, spring AOP - for aspect oriented programming.
+Spring DAO - for database operations using DAO pattern.
+Spring JDBC - for JDBC and DataSource support.
+Spring ORM - for ORM tools support such as Hibernate
+Spring Web Module - for creating web applications.
+Spring MVC - Model-View-Controller implementation for creating web applications, web services etc.
+
+Annotations in the spring framework: @required, @autowired, @qualifier, @resource, @postconstruct, @predestroy.
+
+A bean is an object that is instantiated, assembled, and managed by a Spring IoC container. They are managed by the Spring IoC container. There are 5 scopes of beans in Spring: singleton, prototype, request, session, global-session.
+
+DispatcherServlet - the front controller in the Spring MVC application as it laods the spring bean configuration file and initializes all the beans that have been configured.
+
+ContextLoaderListener, the listener to start up and shut down the WebApplicationContext in Spring root.
+
+Constructor injection - no partial injection
+
+Setter injection - Partial injection
+
+Autowiring enables the programmer to inject the bean automatically, We don't need to write explicit injection logic. 
+
+Spring MVC framework provides following ways to help us achieve robust exception handling: controller based, we can define exception handler methods in our controller classes. 
+Global exception handler - exception handling is a cross-cutting concern and Spring provides.
+HandlerExceptionResolver - Any spring bean declared in the DispatcherServlet's application context that implements HandlerExceptionResolver will be used to intercept and process any exception raised in the MVC system and not handled by a Controller.
+
+Important Spring annotations: @requestmapping, @controller, @responsebody, @pathvariable, @autowired, @qualifier, @service, @configuration, @aspect, @scope.
+
+You can use Spring oRM module to integrate Spring and Hibernate frameworks.
+Spring ORM also provides support for using SPring declartive transation management.
+
+Hibernate is a java based ORm tool that provides framework for mapping application domain objects to the relational database tables and vice versa.
+Hibernate provides referenc eimplementation of java persistence API, that makes it a great choice as ORM tool with benefits of loose coupling.
+Hibernatve configurations are flexible and can be done from XML configuration file as well as programattically.
+
+1.Hibernatve eliminates all the boilter-plate code.
+2.Hibernate framwork provides support for XML as well as JPA annotations.
+3.Hibernate provides a powerful query language (HQL) that is simlar to SQL.
+4. Hibernatve is open source project from Red Hat Community and used worlwide.
+5.For database vendor specific feature, hibernate is suitable because we can also execute native sql queries.
+7. Hibernatve cache helps us in getting better perfoamance.
+
+Get() returns null if object is not found.
+
+load() Throws ObjectNotFoundException if object is not found.
+
+Advantages of Hibernatve over JDBC.
+1.Hibernate removes boiler-plate code that comes with JDBC API.
+2. Hibernate supports inhertiance, associations and collections which are not present with JDBC API.
+3.Hibernate implicitly provides transaction management.
+4.JDBC API throws SQLExceptiont hat is a checked exception, so we need to write a lot of try-catch block code.
+5.Hibernatve Query Language (HQL) is more objectg oriented and close to java programming language. For JDBC, we need to write native sql queries.
+6.Hibernate supprots caching that is better for performance, JDBC queries are not cached hence performance is low.
+
