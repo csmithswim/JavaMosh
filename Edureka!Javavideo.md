@@ -195,3 +195,60 @@ Advantages of Hibernatve over JDBC.
 ---
 
 Beginning of Mosh's Intermediate Course
+
+OOOP contains objects which contain the data/method(behavior) while function programming keeps the data and behaviour seperate.
+
+Problem solving - process of defining a problem, identifying and comparing different solutions, and pickign the one that best solves that problem with respect to the context and constraints.
+
+Most challeneges in software engineering rely on problem solving and a budget.
+
+Benefits of OOPS: reduced complexity, easier maintenance, code reuse, faster development.
+
+Class - blueprint for creating an object.
+
+Object - an instance of a class.
+
+Fields - variables we define in a class.
+
+UML - Unified modeling language, single language to show classes and their relation to visualize classes.
+
+Public - access modifier visible by all other classes.
+
+Void - method that doesn't return a value.
+
+You can use the var keyword when you instantiate an object, i.e. var textBox1 = new TextBox();
+
+Null pointer exception - common error when a reference object is null.
+
+Heap - stores Objects
+
+Stack - primitives and short-lived variables as well as variables that store references to objects in the heap.
+
+Java has no memory deallocation. 
+
+Garbage collector automatically removes unused objects on the heap.
+
+Procedural paradigm - Methods/funnctions with many parameters/arguments with fat methods and fat classes, they are difficult to maintain. There is lack of reusability with it.  
+
+Encapsulation - Bundle the data and methods that oeprate on the dta in a single unit.
+
+It is a good idea to implement validation inside a class throwing an IllegalArgumentException.
+
+Abstration - reduce complexity by hiding unnecessary details in the class.
+
+Coupling - the level of dependency between classes.
+
+To make a constructor type public NameOfClass(initialize fields in class);
+
+Make constructors to initialize objects, Java initializes them by default but the parameters must be set in an specific order.
+
+Method Overloading - when you have multiple parameters for a method, Java does not support default paramaters and don't over do method overloading.
+
+Constructor overloading - when you have different parameters for your constructors, but you must reference the parent class in the special constructor that has the least ammount of parameters.
+
+Use static fields when the value is independent of objects.
+
+The main method is static to enable the java runtime without having to create a new object.
+
+
+
