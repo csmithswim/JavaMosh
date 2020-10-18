@@ -191,3 +191,7 @@ Advantages of Hibernatve over JDBC.
 5.Hibernatve Query Language (HQL) is more objectg oriented and close to java programming language. For JDBC, we need to write native sql queries.
 6.Hibernate supprots caching that is better for performance, JDBC queries are not cached hence performance is low.
 
+
+---
+
+Beginning of Mosh's Intermediate Course
